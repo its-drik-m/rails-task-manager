@@ -8,6 +8,6 @@ Rails.application.routes.draw do
 
   # link to edit task
   get 'tasks/:id/edit', to: 'task#edit', as: :edit_task
-  patch 'tasks/:id/edit', to: 'task#update'
+  patch 'tasks/:id', to: 'task#update'
 
 end

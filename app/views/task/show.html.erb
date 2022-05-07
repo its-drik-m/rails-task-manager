@@ -3,9 +3,16 @@
 <p>details: <%= @task.details %></p>
 <p>completed: <%= @task.completed %></p>
 
-<%# <%= link_to 'Edit', tasks_path %>
+
+<%= link_to edit_task_path(@task) do %>
+  <button class = "btn btn-warning m-2">
+    <i class="fa-solid fa-file-pen"></i>EDIT
+  </button>
+<% end %>
+
 
 <%= link_to tasks_path do %>
-  <i class="fa fa-history"></i> Back to list
-  <%# <button type="button" class="btn btn-info">Back to list</button> %>
+  <button class= "btn btn-info m-2">
+    <i class="fa-solid fa-history"></i> Back to list
+  </button>
 <% end %>
