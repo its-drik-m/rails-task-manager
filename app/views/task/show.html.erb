@@ -1,0 +1,11 @@
+<h1>Task Manager</h1>
+<h2>Task: <%= @task.title %></h2>
+<p>details: <%= @task.details %></p>
+<p>completed: <%= @task.completed %></p>
+
+<%# <%= link_to 'Edit', tasks_path %>
+
+<%= link_to tasks_path do %>
+  <i class="fa fa-history"></i> Back to list
+  <%# <button type="button" class="btn btn-info">Back to list</button> %>
+<% end %>
